@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9314945F-EB68-427F-B04F-5841DA774B2B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>doIt</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".idea\.gitignore" />
+    <Content Include=".idea\compiler.xml" />
+    <Content Include=".idea\encodings.xml" />
+    <Content Include=".idea\jarRepositories.xml" />
+    <Content Include=".idea\libraries\Maven__antlr_antlr_2_7_7.xml" />
+    <Content Include=".idea\libraries\Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+    <Content Include=".idea\libraries\Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_classmate_1_5_1.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml" />
+    <Content Include=".idea\libraries\Maven__com_h2database_h2_1_4_200.xml" />
+    <Content Include=".idea\libraries\Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
+    <Content Include=".idea\libraries\Maven__com_sun_activation_jakarta_activation_1_2_2.xml" />
+    <Content Include=".idea\libraries\Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" />
+    <Content Include=".idea\libraries\Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+    <Content Include=".idea\libraries\Maven__com_zaxxer_HikariCP_3_4_5.xml" />
+    <Content Include=".idea\libraries\Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" />
+    <Content Include=".idea\libraries\Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" />
+    <Content Include=".idea\libraries\Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" />
+    <Content Include=".idea\libraries\Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" />
+    <Content Include=".idea\libraries\Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" />
+    <Content Include=".idea\libraries\Maven__mysql_mysql_connector_java_8_0_22.xml" />
+    <Content Include=".idea\libraries\Maven__net_bytebuddy_byte_buddy_1_10_18.xml" />
+    <Content Include=".idea\libraries\Maven__net_bytebuddy_byte_buddy_agent_1_10_18.xml" />
+    <Content Include=".idea\libraries\Maven__net_minidev_accessors_smart_1_2.xml" />
+    <Content Include=".idea\libraries\Maven__net_minidev_json_smart_2_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_41.xml" />
+    <Content Include=".idea\libraries\Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_41.xml" />
+    <Content Include=".idea\libraries\Maven__org_apiguardian_apiguardian_api_1_1_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_aspectj_aspectjweaver_1_9_6.xml" />
+    <Content Include=".idea\libraries\Maven__org_assertj_assertj_core_3_18_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_dom4j_dom4j_2_1_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_glassfish_jakarta_el_3_0_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_glassfish_jaxb_txw2_2_3_3.xml" />
+    <Content Include=".idea\libraries\Maven__org_hamcrest_hamcrest_2_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" />
+    <Content Include=".idea\libraries\Maven__org_hibernate_hibernate_core_5_4_25_Final.xml" />
+    <Content Include=".idea\libraries\Maven__org_javassist_javassist_3_27_0_GA.xml" />
+    <Content Include=".idea\libraries\Maven__org_jboss_jandex_2_1_3_Final.xml" />
+    <Content Include=".idea\libraries\Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_mockito_mockito_core_3_6_28.xml" />
+    <Content Include=".idea\libraries\Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" />
+    <Content Include=".idea\libraries\Maven__org_objenesis_objenesis_3_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_opentest4j_opentest4j_1_2_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_ow2_asm_asm_5_0_4.xml" />
+    <Content Include=".idea\libraries\Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" />
+    <Content Include=".idea\libraries\Maven__org_slf4j_slf4j_api_1_7_30.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_aop_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_data_jdbc_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_json_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_logging_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_security_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_test_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_starter_web_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_test_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_1.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_data_spring_data_commons_2_4_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_data_spring_data_jdbc_2_1_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_data_spring_data_jpa_2_4_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_data_spring_data_relational_2_1_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_security_spring_security_config_5_4_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_security_spring_security_core_5_4_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_security_spring_security_web_5_4_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_aop_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_aspects_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_beans_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_context_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_core_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_expression_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_jcl_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_jdbc_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_orm_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_test_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_tx_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_webmvc_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_springframework_spring_web_5_3_2.xml" />
+    <Content Include=".idea\libraries\Maven__org_xmlunit_xmlunit_core_2_7_0.xml" />
+    <Content Include=".idea\libraries\Maven__org_yaml_snakeyaml_1_27.xml" />
+    <Content Include=".idea\misc.xml" />
+    <Content Include=".idea\modules.xml" />
+    <Content Include=".idea\uiDesigner.xml" />
+    <Content Include=".idea\workspace.xml" />
+    <Content Include=".mvn\wrapper\maven-wrapper.jar" />
+    <Content Include=".mvn\wrapper\MavenWrapperDownloader.java" />
+    <Content Include="pom.xml" />
+    <Content Include="src\main\java\com\example\doit2\competenza\Competenza.java" />
+    <Content Include="src\main\java\com\example\doit2\competenza\CompetenzaController.java" />
+    <Content Include="src\main\java\com\example\doit2\competenza\CompetenzaRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\competenza\CompetenzaService.java" />
+    <Content Include="src\main\java\com\example\doit2\Doit2Application.java" />
+    <Content Include="src\main\java\com\example\doit2\ente\Ente.java" />
+    <Content Include="src\main\java\com\example\doit2\ente\EnteController.java" />
+    <Content Include="src\main\java\com\example\doit2\ente\EnteRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\ente\EnteService.java" />
+    <Content Include="src\main\java\com\example\doit2\esperto\Esperto.java" />
+    <Content Include="src\main\java\com\example\doit2\esperto\EspertoController.java" />
+    <Content Include="src\main\java\com\example\doit2\esperto\EspertoRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\esperto\EspertoService.java" />
+    <Content Include="src\main\java\com\example\doit2\Notification\Notification.java" />
+    <Content Include="src\main\java\com\example\doit2\Notification\NotificationRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\Notification\NotificationService.java" />
+    <Content Include="src\main\java\com\example\doit2\progettista\Progettista.java" />
+    <Content Include="src\main\java\com\example\doit2\progettista\ProgettistaController.java" />
+    <Content Include="src\main\java\com\example\doit2\progettista\ProgettistaRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\progettista\ProgettistaService.java" />
+    <Content Include="src\main\java\com\example\doit2\progetto\Progetto.java" />
+    <Content Include="src\main\java\com\example\doit2\progetto\ProgettoController.java" />
+    <Content Include="src\main\java\com\example\doit2\progetto\ProgettoRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\progetto\ProgettoService.java" />
+    <Content Include="src\main\java\com\example\doit2\progetto\StatoProgetto.java" />
+    <Content Include="src\main\java\com\example\doit2\proponente\Proponente.java" />
+    <Content Include="src\main\java\com\example\doit2\proponente\ProponenteController.java" />
+    <Content Include="src\main\java\com\example\doit2\proponente\ProponenteRepository.java" />
+    <Content Include="src\main\java\com\example\doit2\proponente\ProponenteService.java" />
+    <Content Include="src\main\java\com\example\doit2\sicurezza\SecurityConfiguration.java" />
+    <Content Include="src\main\java\com\example\doit2\sicurezza\UserPrincipal.java" />
+    <Content Include="src\main\java\com\example\doit2\sicurezza\UserPrincipalDetailsService.java" />
+    <Content Include="src\test\java\com\example\doit2\Doit2ApplicationTests.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".mvn\wrapper\maven-wrapper.properties" />
+    <None Include="data\demo.mv.db" />
+    <None Include="data\demo.trace.db" />
+    <None Include="doit2.iml" />
+    <None Include="HELP.md" />
+    <None Include="mvnw.cmd" />
+    <None Include="src\main\resources\application.properties" />
+    <None Include="target\classes\application.properties" />
+    <None Include="target\classes\com\example\doit2\competenza\Competenza.class" />
+    <None Include="target\classes\com\example\doit2\competenza\CompetenzaController.class" />
+    <None Include="target\classes\com\example\doit2\competenza\CompetenzaRepository.class" />
+    <None Include="target\classes\com\example\doit2\competenza\CompetenzaService.class" />
+    <None Include="target\classes\com\example\doit2\Doit2Application.class" />
+    <None Include="target\classes\com\example\doit2\ente\Ente.class" />
+    <None Include="target\classes\com\example\doit2\ente\EnteController.class" />
+    <None Include="target\classes\com\example\doit2\ente\EnteRepository.class" />
+    <None Include="target\classes\com\example\doit2\ente\EnteService.class" />
+    <None Include="target\classes\com\example\doit2\esperto\Esperto.class" />
+    <None Include="target\classes\com\example\doit2\esperto\EspertoController.class" />
+    <None Include="target\classes\com\example\doit2\esperto\EspertoRepository.class" />
+    <None Include="target\classes\com\example\doit2\esperto\EspertoService.class" />
+    <None Include="target\classes\com\example\doit2\Notification\Notification.class" />
+    <None Include="target\classes\com\example\doit2\Notification\NotificationRepository.class" />
+    <None Include="target\classes\com\example\doit2\Notification\NotificationService.class" />
+    <None Include="target\classes\com\example\doit2\progettista\Progettista.class" />
+    <None Include="target\classes\com\example\doit2\progettista\ProgettistaController.class" />
+    <None Include="target\classes\com\example\doit2\progettista\ProgettistaRepository.class" />
+    <None Include="target\classes\com\example\doit2\progettista\ProgettistaService.class" />
+    <None Include="target\classes\com\example\doit2\progetto\Progetto.class" />
+    <None Include="target\classes\com\example\doit2\progetto\ProgettoController.class" />
+    <None Include="target\classes\com\example\doit2\progetto\ProgettoRepository.class" />
+    <None Include="target\classes\com\example\doit2\progetto\ProgettoService.class" />
+    <None Include="target\classes\com\example\doit2\progetto\StatoProgetto.class" />
+    <None Include="target\classes\com\example\doit2\proponente\Proponente.class" />
+    <None Include="target\classes\com\example\doit2\proponente\ProponenteController.class" />
+    <None Include="target\classes\com\example\doit2\proponente\ProponenteRepository.class" />
+    <None Include="target\classes\com\example\doit2\proponente\ProponenteService.class" />
+    <None Include="target\classes\com\example\doit2\sicurezza\SecurityConfiguration.class" />
+    <None Include="target\classes\com\example\doit2\sicurezza\UserPrincipal.class" />
+    <None Include="target\classes\com\example\doit2\sicurezza\UserPrincipalDetailsService.class" />
+    <None Include="target\test-classes\com\example\doit2\Doit2ApplicationTests.class" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+    <Folder Include="src\main\resources\static\" />
+    <Folder Include="src\main\resources\templates\" />
+    <Folder Include="target\generated-sources\annotations\" />
+    <Folder Include="target\generated-test-sources\test-annotations\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
