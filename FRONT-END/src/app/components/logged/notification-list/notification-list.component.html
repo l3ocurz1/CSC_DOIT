@@ -1,0 +1,22 @@
+<app-jumbotron [Titolo]="'Notifiche'" [SottoTitolo]="''" [Show]="false"></app-jumbotron>
+<div class="row justify-content-between">
+    <div class="col align-self-start">
+    </div>
+    <div class="col-md-4 ms-auto">
+    </div>
+</div>
+<div class="container">
+  <div *ngIf="notifiche.length == 0">
+    <h4>Non hai nessuna notifica...</h4>
+  </div>
+    <table class="table table">
+        <tbody *ngFor="let notifica of notifiche">
+            <tr></tr>
+            <td>{{notifica.message}}</td>
+            <td>
+                <button class="btn btn-outline-danger" type="submit" (click)="remove(notifica.id)">Delete</button>
+            </td>
+            <tr></tr>
+        </tbody>
+    </table>
+</div>

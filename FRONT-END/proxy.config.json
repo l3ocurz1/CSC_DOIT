@@ -1,0 +1,17 @@
+{
+    "": {
+    "target": "https://localhost:9000",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve --proxy-config proxy.config.json",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+        }
+    }
+}
+

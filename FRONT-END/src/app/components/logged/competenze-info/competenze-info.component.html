@@ -1,0 +1,57 @@
+<app-jumbotron [Titolo]="'Info Competenze'" [SottoTitolo]="''" [Show]="false"></app-jumbotron>
+
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-md-6">
+            <div class="container">
+                <h3>Le mie Competenze</h3>
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <td>Nome</td>
+                            <td>Descrizione</td>
+                            <td>Azione</td>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let competenze of possedute">
+                        <tr></tr>
+                        <td>{{competenze.nome}}</td>
+                        <td>{{competenze.descrizione}}</td>
+                        <td>
+                            <button class="btn btn-outline-danger" type="submit"
+                                (click)="remove(competenze.nome)">Delete</button>
+                        </td>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container">
+                <h3>Competenze Rimanenti</h3>
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <td>Nome</td>
+                            <td>Descrizione</td>
+                            <td>Azione</td>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let competenze of nonPossedute">
+                        <tr></tr>
+                        <td>{{competenze.nome}}</td>
+                        <td>{{competenze.descrizione}}</td>
+                        <td>
+                            <button class="btn btn-outline-info" type="submit"
+                                (click)="aggiungi(competenze.nome)">Aggiungi</button>
+                        </td>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-dark" type="submit" (click)=save()>SALVA</button>
+        </div>
+    </div>
+</div>
