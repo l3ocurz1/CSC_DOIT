@@ -1,0 +1,31 @@
+div.mb-3{
+    margin-top: 30px;
+}
+
+div.box{
+    margin: 1%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    padding-bottom: 1%;
+}
+
+div.grid{
+    margin: 5%;
+    margin-bottom: 1%;
+}
+
+mat-card{
+    height: 100% !important;
+    padding: 8%;
+}
+div.card-top{
+    height: 70%;
+}
+div.col-sm-6{
+    margin-bottom: 50px;
+}
+
+span.oi oi-plus{
+    position: relative;
+    right: 10px;
+}

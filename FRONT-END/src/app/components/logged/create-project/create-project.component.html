@@ -1,0 +1,37 @@
+<app-jumbotron [Titolo]="'Pubblica un progetto'" [SottoTitolo]="''" [Show]="false"></app-jumbotron>
+
+<div class="container">
+  <div class="box">
+    <form>
+      <div class="mb-3">
+        <label for="InputTitle" class="form-label">Titolo:</label>
+        <input type="text" class="form-control" id="InputTitle" placeholder="Titolo" [(ngModel)]="title"
+               name="title">
+      </div>
+      <div class="mb-3">
+        <label for="InputDescription" class="form-label">Descrizione:</label>
+        <input type="text" class="form-control" id="InputDescription" placeholder="Descrizione"
+               [(ngModel)]="description" name="description">
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+               value="true" [(ngModel)]="option">
+        <label class="form-check-label" for="inlineRadio1">Specifica i requisiti</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+               value="false" [(ngModel)]="option">
+        <label class="form-check-label" for="inlineRadio2">Incarica un esperto</label>
+      </div>
+      <div class="mb-3">
+        <label for="InputDescription" class="form-label">Requisiti:</label>
+        <ng-multiselect-dropdown [placeholder]="'Requisiti '" [(ngModel)]="selectedItems" [data]="dropdownList"
+                                 [settings]="dropdownSettings" name="Requisiti">
+        </ng-multiselect-dropdown>
+      </div>
+      <div>
+        <button class="btn btn-dark" (click)="addProject()">Crea</button>
+      </div>
+    </form>
+  </div>
+</div>
