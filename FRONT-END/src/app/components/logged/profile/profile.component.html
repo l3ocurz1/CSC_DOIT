@@ -1,0 +1,395 @@
+<app-jumbotron [Titolo]="'Accesso'" [SottoTitolo]="''" [Show]="false"></app-jumbotron>
+
+<!--Informazioni generali account-->
+<div *ngIf="utente">
+  <div class="container">
+    <div class="box">
+      <form>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <h3>Informazioni Account</h3>
+            </div>
+            <div class="col-md-3" *ngIf="utente.ruolo == 'PROPONENTE' || utente.ruolo == 'ENTE'">
+              <button class="btn btn-primary" type="submit" (click)="publish()">Nuovo progetto</button>
+            </div>
+            <div class="col-md-3">
+
+              <button class="btn btn-dark" type="submit" (click)="modificaProfilo()">Modifica Profilo</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="mb-3">
+          <label class="form-label"> <b>Username:</b></label> {{utente.userName}}
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> <b>Email:</b></label> {{utente.email}}
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> <b>Ruolo:</b></label>
+          <div></div>{{utente.ruolo}}
+        </div>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <label class="form-label"> <b>Competenze:</b></label>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-dark" type="submit" (click)="modifica()">
+                <span class="oi oi-plus"></span>
+              </a>
+            </div>
+          </div>
+          <div *ngFor="let competenza of utente.competenze">
+            <div></div>{{competenza.nome}}
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--Candidature progetti-->
+
+  <div *ngIf="utente.progetti_candidature">
+    <div class="container" *ngIf="utente.progetti_candidature.length != 0">
+      <div class="box">
+        <form>
+          <div class="mb-3">
+            <div class="row justify-content-between">
+              <div class="col align-self-start">
+                <h3>Candidature presentate</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="grid">
+            <div class="row justify-content">
+              <div *ngFor="let project of utente.progetti_candidature" class=col-sm-6>
+                <mat-card>
+                  <div class="card-top">
+                    <mat-card-header>
+                      <mat-card-title>{{project.titolo}}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-subtitle>{{project.descrizione}}</mat-card-subtitle>
+                  </div>
+                  <div>
+                    <mat-card-actions>
+                      <button class="btn btn-dark" type="submit" (click)="Entra(project.id)">Entra</button>
+                      <button class="btn btn-danger" type="submit" (click)="abbandona(project.id)">Cancella</button>
+                    </mat-card-actions>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Progetti in carico-->
+
+  <div *ngIf="utente.progetti_in_carico">
+    <div class="container" *ngIf="utente.progetti_in_carico.length != 0">
+      <div class="box">
+        <form>
+          <div class="mb-3">
+            <div class="row justify-content-between">
+              <div class="col align-self-start">
+                <h3>Progetti in carico</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="grid">
+            <div class="row justify-content">
+              <div *ngFor="let project of utente.progetti_in_carico" class=col-sm-6>
+                <mat-card>
+                  <div class="card-top">
+                    <mat-card-header>
+                      <mat-card-title>{{project.titolo}}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-subtitle>{{project.descrizione}}</mat-card-subtitle>
+                  </div>
+                  <div>
+                    <mat-card-actions>
+                      <button class="btn btn-dark" type="submit" (click)="Entra(project.id)">Entra</button>
+                      <button class="btn btn-danger" type="submit" (click)="abbandona(project.id)">Abbandona</button>
+                    </mat-card-actions>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Richieste ente-->
+
+  <div *ngIf="utente.ruolo != 'ENTE' && utente.richieste_ente ">
+    <div class="container" *ngIf=" utente.richieste_ente.length != 0">
+      <div class="box">
+        <form>
+          <div class="mb-3">
+            <div class="row justify-content-between">
+              <div class="col align-self-start">
+                <h3>Richieste ente</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="grid">
+            <div class="row justify-content">
+              <div *ngFor="let ente of utente.richieste_ente" class=col-sm-6>
+                <mat-card>
+                  <div class="card-top">
+                    <mat-card-header>
+                      <mat-card-title>{{ente.userName}}</mat-card-title>
+                    </mat-card-header>
+                  </div>
+                  <div>
+                    <mat-card-actions>
+                      <button class="btn btn-dark" type="submit" (click)="entraProgettista(ente.id)">Entra</button>
+                      <button class="btn btn-danger" type="submit" (click)="cancellaRichiestaEnte(ente.id)">Abbandona</button>
+                    </mat-card-actions>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Enti di appartenenza-->
+
+  <div *ngIf="utente.ruolo != 'ENTE' && utente.ente">
+    <div class="container" *ngIf="utente.ente.length != 0">
+      <div class="box">
+        <form>
+          <div class="mb-3">
+            <div class="row justify-content-between">
+              <div class="col align-self-start">
+                <h3>Enti di appartenenza</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="grid">
+            <div class="row justify-content">
+              <div *ngFor="let ente of utente.ente" class=col-sm-6>
+                <mat-card>
+                  <div class="card-top">
+                    <mat-card-header>
+                      <mat-card-title>{{ente.userName}}</mat-card-title>
+                    </mat-card-header>
+                  </div>
+                  <div>
+                    <mat-card-actions>
+                      <button class="btn btn-dark" type="submit" (click)="entraEnte(ente.id)">Entra</button>
+                      <button class="btn btn-danger" type="submit" (click)="abbandonaEnte(ente.id)">Abbandona</button>
+                    </mat-card-actions>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Progetti pubblicati-->
+
+  <div *ngIf="(utente.ruolo == 'PROPONENTE' || utente.ruolo == 'ENTE') && utente.progetti_pubblicati" class="container">
+        <div class="box">
+          <form>
+            <div class="mb-3">
+              <div class="row justify-content-between">
+                <div class="col align-self-start">
+                  <h3>Progetti pubblicati</h3>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h5 *ngIf="utente.progetti_pubblicati.length == 0"> Nessun progetto pubblicato </h5>
+            <div class="grid">
+              <div class="row justify-content">
+                <div *ngFor="let project of utente.progetti_pubblicati" class=col-sm-6>
+                  <mat-card>
+                    <div class="card-top">
+                      <mat-card-header>
+                        <mat-card-title>{{project.titolo}}</mat-card-title>
+                      </mat-card-header>
+                      <mat-card-subtitle>{{project.descrizione}}</mat-card-subtitle>
+                    </div>
+                    <div>
+                      <mat-card-actions>
+                        <button class="btn btn-dark" type="submit" (click)="Entra(project.id)">Entra</button>
+                        <button class="btn btn-danger" type="submit"
+                          (click)="cancellaProgetto(project.id)">Cancella</button>
+                      </mat-card-actions>
+                    </div>
+                  </mat-card>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  </div>
+
+  <!--progettisti che hanno fatto richiesta per l'ente-->
+
+  <div class="container" *ngIf="utente.ruolo == 'ENTE' && utente.richieste">
+    <div class="box">
+      <form>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <h3>Progettisti candidati</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5 *ngIf="utente.richieste.length == 0"> Nessun candidato per l'ente </h5>
+        <div class="grid">
+          <div class="row justify-content">
+            <div *ngFor="let progettista of utente.richieste" class=col-sm-6>
+              <mat-card>
+                <div class="card-top">
+                  <mat-card-header>
+                    <mat-card-title>{{progettista.userName}}</mat-card-title>
+                  </mat-card-header>
+                </div>
+                <div>
+                  <mat-card-actions>
+                    <button class="btn btn-dark" type="submit" (click)="entraProgettista(progettista.id)">Entra</button>
+                    <button class="btn btn-success" type="submit"
+                      (click)="accettaProgettista(progettista.id)">Accetta</button>
+                    <button class="btn btn-danger" type="submit" (click)="rifiutaProgettista(progettista.id)">Rifiuta</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--progettisti appartenenti-->
+
+  <div class="container" *ngIf="utente.ruolo == 'ENTE' && utente.progettisti">
+    <div class="box">
+      <form>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <h3>Progettisti appartenenti</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5 *ngIf="utente.progettisti.length == 0"> Nessun progettista per l'ente </h5>
+        <div class="grid">
+          <div class="row justify-content">
+            <div *ngFor="let progettista of utente.progettisti" class=col-sm-6>
+              <mat-card>
+                <div class="card-top">
+                  <mat-card-header>
+                    <mat-card-title>{{progettista.userName}}</mat-card-title>
+                  </mat-card-header>
+                </div>
+                <div>
+                  <mat-card-actions>
+                    <button class="btn btn-dark" type="submit" (click)="entraProgettista(progettista.id)">Entra</button>
+                    <button class="btn btn-danger" type="submit"
+                      (click)="espelliProgettista(progettista.id)">Espelli</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--Candidature presentate come Esperto-->
+
+  <div class="container" *ngIf="utente.ruolo == 'ESPERTO' && utente.proposte_progetti">
+    <div class="box">
+      <form>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <h3>Candidature come esperto</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5 *ngIf="utente.proposte_progetti.length == 0"> Nessuna candidatura presentata </h5>
+        <div class="grid">
+          <div class="row justify-content">
+            <div *ngFor="let progetto of utente.proposte_progetti" class=col-sm-6>
+              <mat-card>
+                <div class="card-top">
+                  <mat-card-header>
+                    <mat-card-title>{{progetto.titolo}}</mat-card-title>
+                  </mat-card-header>
+                </div>
+                <div>
+                  <mat-card-actions>
+                    <button class="btn btn-dark" type="submit" (click)="Entra(progetto.id)">Entra</button>
+                    <!--<button class="btn btn-dark" type="submit" (click)="espelliProgettista(progettista.id)">Espelli</button>-->
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--Progetti in carico come Esperto-->
+
+  <div class="container" *ngIf="utente.ruolo == 'ESPERTO' && utente.progetti_assegnati">
+    <div class="box">
+      <form>
+        <div class="mb-3">
+          <div class="row justify-content-between">
+            <div class="col align-self-start">
+              <h3>Progetti assegnati come esperto</h3>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5 *ngIf="utente.progetti_assegnati.length == 0"> Nessun progetto assegnato </h5>
+        <div class="grid">
+          <div class="row justify-content">
+            <div *ngFor="let progetto of utente.progetti_assegnati" class=col-sm-6>
+              <mat-card>
+                <div class="card-top">
+                  <mat-card-header>
+                    <mat-card-title>{{progetto.titolo}}</mat-card-title>
+                  </mat-card-header>
+                </div>
+                <div>
+                  <mat-card-actions>
+                    <button class="btn btn-dark" type="submit" (click)="Entra(progetto.id)">Entra</button>
+                    <!--<button class="btn btn-dark" type="submit" (click)="espelliProgettista(progettista.id)">Espelli</button>-->
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
