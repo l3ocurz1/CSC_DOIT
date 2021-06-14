@@ -1,11 +1,11 @@
 # CSC_DOIT
 Piattaforma di progettazione collaborativa e matching di competenze sviluppata per il corso di Ingegneria del Software
-   <b>DO_IT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani e Giovanni Simeone per l'esame di <b>Ingegneria del Software</b> 
+   <b>CSC_DOIT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani e Giovanni Simeone per l'esame di <b>Ingegneria del Software</b> 
     <br><br><b>
 
 
 
-# 📝 Panoramica e funzionalità 
+# Panoramica e funzionalità 
 
 **Il fine dell'applicativo proposto è quello di promuovere lo svolgimento collaborativo di progetti innovativi e facilitare l’inserimento delle persone all’interno degli stessi progetti sulla base delle loro competenze. Allo stesso tempo vuole realizzare una vetrina dei progetti svolti in cui un qualsiasi cittadino sia dunque capace di ricercare e visualizzare le informazioni sui progetti e chi li ha svolti.**
 
@@ -54,7 +54,7 @@ Le varie iterazioni hanno dato origine ai seguenti artefatti:
 - Code Base
 
 
- Tecnologie utilizzate
+ # Tecnologie utilizzate
 
 Il lato backend si basa sul linguaggio **Java** e rende disponibile per l'interazione delle **Api Rest**, la cui scrittura e gestione, anche sotto l'ottica della sicurezza, sono state rese possibili grazie al framework **Spring Boot**. Per il testing del codice scritto ci si è affidati al framework **JUnit** mentre per il building automatizzato del sistema si è impiegato il tool **Gradle**.
 Il lato back end si basa sul linguaggio **Java** e rende disponibile per l'interazione delle **Api Rest**, la cui scrittura e gestione, anche sotto l'ottica della sicurezza, sono state rese possibili grazie al framework **Spring Boot**. Per il testing del codice scritto ci si è affidati al framework **JUnit** mentre per il building automatizzato del sistema si è impiegato il tool **Gradle**.
