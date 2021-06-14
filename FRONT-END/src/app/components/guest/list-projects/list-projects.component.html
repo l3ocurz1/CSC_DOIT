@@ -1,0 +1,25 @@
+<app-jumbotron [Titolo]="'Progetti pubblicati'" [SottoTitolo]="'Ecco qua i nosti progetti. Qualcuno fa al caso tuo?'" [Show]="false"></app-jumbotron>
+
+<div *ngIf="projects">
+
+
+  <div class="grid">
+    <div class="row justify-content">
+      <div *ngFor="let project of projects" class="col-sm-6">
+        <mat-card>
+          <div class="card-top">
+            <mat-card-header>
+              <mat-card-title>{{project.titolo}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>{{project.descrizione}}</mat-card-subtitle>
+          </div>
+          <div>
+            <mat-card-actions>
+              <button class="btn btn-info" type="submit" (click)="Entra(project.id)">Entra</button>
+            </mat-card-actions>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

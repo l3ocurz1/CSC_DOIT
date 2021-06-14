@@ -1,0 +1,22 @@
+div.box-left{
+    margin-top: 0%;
+}
+div.box-right{
+    margin-top: 0%;
+}
+div.col-xs-6.col-sm-3{
+    
+    min-width: 40%;
+    max-width: 60%;
+    width: auto;
+    margin: 2%;
+    padding: 3%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+div.row{
+  margin-left: 200px ;
+    margin: 3%;
+    margin-top: 3%;
+    padding: 2%;
+    
+}

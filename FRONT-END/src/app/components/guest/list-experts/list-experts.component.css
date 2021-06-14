@@ -1,0 +1,7 @@
+div.card {
+    border: 10;
+}
+div.card-body{
+    align-self: center;
+    align-content: center;
+}

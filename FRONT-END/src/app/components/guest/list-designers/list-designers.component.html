@@ -1,0 +1,19 @@
+<app-jumbotron [Titolo]="'Progettisti'" [SottoTitolo]="'Ecco i nostri progettisti. Basta un click per farne parte.'" [Show]="false"></app-jumbotron>
+
+<!--Lista progettisti-->
+<div *ngIf="designers">
+
+  <div class="row justify-content-center">
+    <div *ngFor="let designer of designers" class=col-sm-auto>
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\Images\immagine_non_trovata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b>
+            <h5 class="card-title">{{designer.userName}}</h5>
+          </b>
+          <button type="submit" class="btn btn-info" (click)="entra(designer.id)">Vai al profilo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

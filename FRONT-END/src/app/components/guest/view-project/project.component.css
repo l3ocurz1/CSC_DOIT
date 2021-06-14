@@ -1,0 +1,12 @@
+div.mb-3{
+    margin-top: 30px;
+}
+
+div.box{
+    margin: 1%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+}
+button{
+    margin-top: 50px;
+}

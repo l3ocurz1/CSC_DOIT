@@ -1,0 +1,18 @@
+<app-jumbotron [Titolo]="'Proponenti'" [SottoTitolo]="'Non hai trovato i progettisti che fanno per te? Sei nel posto giusto '" [Show]="false"></app-jumbotron>
+
+<div *ngIf="proponents">
+
+  <div class="row justify-content-center">
+    <div *ngFor="let proponent of proponents" class=col-sm-auto>
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\Images\immagine_non_trovata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b>
+            <h5 class="card-title">{{proponent.userName}}</h5>
+          </b>
+          <button type="submit" class="btn btn-info" (click)="entra(proponent.id)">Vai al profilo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

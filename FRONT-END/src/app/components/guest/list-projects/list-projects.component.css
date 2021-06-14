@@ -1,0 +1,16 @@
+div.grid{
+    margin: 5%;
+    margin-top: 1%;
+}
+
+mat-card{
+    height: 100% !important;
+    padding: 5%;
+}
+
+div.card-top{
+    height: 70%;
+}
+div.col-sm-6{
+    margin-bottom: 50px;
+}

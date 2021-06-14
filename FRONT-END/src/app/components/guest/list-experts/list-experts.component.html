@@ -1,0 +1,19 @@
+<app-jumbotron [Titolo]="'Esperti'" [SottoTitolo]="'Ecco qua i migliori professori universitari sulla piazza...'" [Show]="false"></app-jumbotron>
+
+<div *ngIf="experts">
+
+
+  <div class="row justify-content-center">
+    <div *ngFor="let expert of experts" class=col-sm-auto>
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\Images\immagine_non_trovata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <b>
+            <h5 class="card-title">{{expert.userName}}</h5>
+          </b>
+          <button type="submit" class="btn btn-info" (click)="entra(expert.id)">Vai al profilo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
