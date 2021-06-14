@@ -1,21 +1,11 @@
 # CSC_DOIT
 Piattaforma di progettazione collaborativa e matching di competenze sviluppata per il corso di Ingegneria del Software
-   <b>DO_IT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Luca Patarca, Giorgio Paoletti e Nico Trionfetti per l'esame di <b>Ingegneria del Software</b> e <b>Progettazione di Applicazioni Web e Mobili</b>.
+   <b>DO_IT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani e Giovanni Simeone per l'esame di <b>Ingegneria del Software</b> 
     <br><br><b>
-<a href="https://www.unicam.it/">• Unicam</a>
-<a href="https://github.com/trionfettinicoUNICAM/PPTeam_DOIT">• PPTEAM_DOIT</img></a>
-</b></p>
 
-# Tabella dei contenuti
-# 📔 Tabella dei contenuti
 
-- [Panoramica e funzionalità](#panoramica)
-- [Processo di sviluppo](#processo)
-- [Tecnologie utilizzate](#tecno)
-- [Autori](#autori)
 
-# Panoramica e funzionalità <a name = "panoramica"></a>
-# 📝 Panoramica e funzionalità <a name = "panoramica"></a>
+# 📝 Panoramica e funzionalità 
 
 **Il fine dell'applicativo proposto è quello di promuovere lo svolgimento collaborativo di progetti innovativi e facilitare l’inserimento delle persone all’interno degli stessi progetti sulla base delle loro competenze. Allo stesso tempo vuole realizzare una vetrina dei progetti svolti in cui un qualsiasi cittadino sia dunque capace di ricercare e visualizzare le informazioni sui progetti e chi li ha svolti.**
 
