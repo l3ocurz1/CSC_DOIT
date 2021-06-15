@@ -33,8 +33,6 @@ Attualmente sono state svolte 3 iterazioni dove è stato possibile effettuare l'
 
 
 
-
-
  # Tecnologie utilizzate
 
 Il lato backend si basa sul linguaggio **Java** e rende disponibile per l'interazione delle **Api Rest**, la cui scrittura e gestione, anche sotto l'ottica della sicurezza, sono state rese possibili grazie al framework **Spring Boot**. Per il testing del codice scritto ci si è affidati al framework **SpingBootTest** mentre per il building automatizzato del sistema si è impiegato il tool **Maven**.
