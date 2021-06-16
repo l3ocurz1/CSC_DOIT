@@ -38,11 +38,11 @@ Il lato backend si basa sul linguaggio **Java** e rende disponibile per l'intera
 Il lato back end si basa sul linguaggio **Java** e rende disponibile per l'interazione delle **Api Rest**, la cui scrittura e gestione, anche sotto l'ottica della sicurezza, sono state rese possibili grazie al framework **Spring Boot**. Per il testing del codice scritto ci si è affidati al framework **SpingBootTest** mentre per il building automatizzato del sistema si è impiegato il tool **Maven**.
 
 Per quanto concerne la persistenza delle informazioni processate a livello di backend si è deciso di sfruttare i servizi offerti da **h2DB** e dal relativo framework per linguaggio Java.
-Per quanto concerne la persistenza delle informazioni processate a livello di back end si è deciso di sfruttare i servizi offerti dal DBMS non relazionale **h2DB** e dal relativo framework per linguaggio Java.
+Per quanto concerne la persistenza delle informazioni processate a livello di back end si è deciso di sfruttare i servizi offerti dal DBMS  relazionale **h2DB** e dal relativo framework per linguaggio Java.
 
 Il frontend è interamante scritto utilizzando il framework **Ionic** e scegliendo come user interface il framework **Angular** basato su **TypeScript**. L'applicativo si sostanzia in un app mobile Ibrida, utilizzando la metodologia Single Page Application, che interagisce con il backend tramite chiamate HTTP alle Api Rest rese disponibili. 
 
-Il frontend è interamente scritto utilizzando il framework **Ionic** e scegliendo come user interface il framework **Angular** basato su **TypeScript**. L'applicativo si sostanzia in un app mobile Ibrida, utilizzando la metodologia Single Page Application, che interagisce con il back end tramite chiamate HTTP alle Api Rest rese disponibili. 
+. 
 
 
 
