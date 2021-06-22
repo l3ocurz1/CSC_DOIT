@@ -51,4 +51,4 @@ Il frontend è interamante scritto utilizzando il framework **Ionic** e sceglien
 
 - [Leonardo Curzi](https://github.com/l3ocurz1)
 - [Emanuel Fermani](https://github.com/TheFermani71)
-- [Giovanni Simeone](https://github.com/giosimeo)
+
