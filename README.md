@@ -1,6 +1,6 @@
 # CSC_DOIT
 Piattaforma di progettazione collaborativa e matching di competenze sviluppata per il corso di Ingegneria del Software
-   <b>CSC_DOIT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani e Giovanni Simeone per l'esame di <b>Ingegneria del Software</b> 
+   <b>CSC_DOIT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani per l'esame di <b>Progettazione di Applicazioni Web e Mobile</b> e <b>Ingegneria del Software</b>
     <br><br><b>
 
 
