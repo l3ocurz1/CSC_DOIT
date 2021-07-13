@@ -31,12 +31,11 @@ Per sviluppare l'applicativo è stato scelto di seguire il processo standardizza
 Attualmente sono state svolte 3 iterazioni dove è stato possibile effettuare l'analisi dei requisi, la progettazione del sistema, l'implementazione e la fase di testing.
    
 Le varie iterazioni hanno dato origine ai seguenti artefatti:
-
-Diagramma dei casi d'uso: raccolta e specifica dei requisiti e funzionalità del sistema.
-Diagramma classi di analisi: identificano i concetti che è necessario il sistema rappresenti e sia capace di manipolare.
-Diagrammi di sequenza: descrivono come le classi di analisi interagiscono tra di loro per realizzare il comportamento definito nei casi d'uso.
-Diagramma classi di progetto: realizzato sfruttando il principio LRG (Low Representational Gap) per derivare le classi di progetto partendo dalle classi di analisi, il diagramma verrà utilizzato per le attività di implementazione.
-Code Base
+- Diagramma dei casi d'uso: raccolta e specifica dei requisiti e funzionalità del sistema.
+- Diagramma classi di analisi: identificano i concetti che è necessario il sistema rappresenti e sia capace di manipolare.
+- Diagrammi di sequenza: descrivono come le classi di analisi interagiscono tra di loro per realizzare il comportamento definito nei casi d'uso.
+- Diagramma classi di progetto: realizzato sfruttando il principio LRG (Low Representational Gap) per derivare le classi di progetto partendo dalle classi di analisi, il diagramma verrà utilizzato per le attività di implementazione.
+- Code Base
 
 
 
