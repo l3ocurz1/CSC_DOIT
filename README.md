@@ -1,6 +1,6 @@
 # CSC_DOIT
-Piattaforma di progettazione collaborativa e matching di competenze sviluppata per il corso di Ingegneria del Software
-   <b>CSC_DOIT</b>, progetto realizzato in <b>Ionic</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani per l'esame di <b>Progettazione di Applicazioni Web e Mobile</b> e <b>Ingegneria del Software</b>
+Piattaforma di progettazione collaborativa e matching di competenze 
+   <b>CSC_DOIT</b>, progetto realizzato in <b>ANGULAR</b> e <b>Spring</b> per il corso di laurea <b>L-31</b> presso <b>Unicam</b>, <i>nell'anno accademico 2020/2021</i>, realizzato dagli studenti Leonardo Curzi, Emanuel Fermani per l'esame di <b>Progettazione di Applicazioni Web e Mobile</b> e <b>Ingegneria del Software</b>
     <br><br><b>
 
 
@@ -29,6 +29,14 @@ Il creatore di un progetto possiede tutti i permessi che concerne la gestione de
 Per sviluppare l'applicativo è stato scelto di seguire il processo standardizzato **Unified Process (UP)**, processo iterativo incrementale, utilizzando come strumento di lavoro **Visual Paradigm** basato sul **Unified Modeling Language (UML)**.
 
 Attualmente sono state svolte 3 iterazioni dove è stato possibile effettuare l'analisi dei requisi, la progettazione del sistema, l'implementazione e la fase di testing.
+   
+Le varie iterazioni hanno dato origine ai seguenti artefatti:
+
+Diagramma dei casi d'uso: raccolta e specifica dei requisiti e funzionalità del sistema.
+Diagramma classi di analisi: identificano i concetti che è necessario il sistema rappresenti e sia capace di manipolare.
+Diagrammi di sequenza: descrivono come le classi di analisi interagiscono tra di loro per realizzare il comportamento definito nei casi d'uso.
+Diagramma classi di progetto: realizzato sfruttando il principio LRG (Low Representational Gap) per derivare le classi di progetto partendo dalle classi di analisi, il diagramma verrà utilizzato per le attività di implementazione.
+Code Base
 
 
 
